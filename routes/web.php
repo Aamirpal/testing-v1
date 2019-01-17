@@ -20,3 +20,7 @@ Route::get('/test', function () {
 	\Log::debug('Here is some debug information');
     return view('jhgjg');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
