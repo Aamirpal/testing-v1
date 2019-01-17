@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/test', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test2', function () {
-    return view('welcomegfdg');
+
+Route::get('/test', function () {
+	\Log::debug('Here is some debug information');
+    return view('jhgjg');
 });
